@@ -8,7 +8,7 @@ export const dashboardSlice = createSlice({
   },
   reducers: {
     display: (state, action) => {
-      state.todo = action.payload;
+      state.todos = action.payload;
     },
   },
 });
@@ -36,6 +36,6 @@ export const getTodo = () => (dispatch) => {
 // The function below is called a selector and allows us to select a value from
 // the state. Selectors can also be defined inline where they're used instead of
 // in the slice file. For example: `useSelector((state) => state.counter.value)`
-export const selectTodos = state => state.dashboard.todos;
+export const selectTodo = state => state.dashboard.todos;
 
 export default dashboardSlice.reducer;

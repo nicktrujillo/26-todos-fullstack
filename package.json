@@ -1,0 +1,26 @@
+{
+  "name": "26-todos-fullstack",
+  "version": "1.0.0",
+  "description": "## The following is a fullstack app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd client && npm start",
+    "server": "cd server && npm start",
+    "start": "concurrently \"npm run client\" \"npm run server\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicktrujillo/26-todos-fullstack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicktrujillo/26-todos-fullstack/issues"
+  },
+  "homepage": "https://github.com/nicktrujillo/26-todos-fullstack#readme",
+  "dependencies": {
+    "concurrently": "^5.3.0"
+  }
+}
